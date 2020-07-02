@@ -1,0 +1,15 @@
+---
+ - hosts: all
+   become: yes
+   tasks:
+    - name: installing apache on ubuntu node
+      apt:
+       name: apache2
+       state: present
+      when: ansible-os-family=="debian"
+    - name: installing httpd on redhat node 
+      yum:
+       name: httpd
+       state: present
+      when: ansible-os-family=="RedHat"
+      
