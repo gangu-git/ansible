@@ -12,6 +12,6 @@
       when: ansible_os_family=="Debian"
     - name: unistalling httpd on redhat node 
       package:
-       name: {{ package_name2}}
+       name: "{{ package_name2}}"
        state: absent
       when: ansible_os_family=="RedHat"
