@@ -1,5 +1,5 @@
 ---
- - hosts: [ubuntus]
+ - hosts: all
    become: yes
    tasks:
     - name: install apache2 on webserver

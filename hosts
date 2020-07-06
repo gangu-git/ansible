@@ -1,12 +1,11 @@
 [wbservers]
-172.31.36.37
+172.31.36.37 package_name=apache2
 
 [dbservers]
-172.31.32.238
+172.31.32.238 package_name2=httpd
 
 [ubuntus]
 172.31.36.37
 172.31.32.238
-[ubuntus:vars]
- package_name=apache2
- package_name2=httpd
+
+
