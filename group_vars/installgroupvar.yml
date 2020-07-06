@@ -1,0 +1,18 @@
+---
+  hosts: [ubuntu]
+  become: yes
+  tasks:
+   - name: i want istall apacheon my ubuntu
+     apt:
+      name: "{{linux}}"
+      state: present
+     when: ansible_os_family== "Debian" 
+   - name: i wnat istall httpd on redhat node
+     yum:
+      name: "{{Redhat}}"
+      state: present
+     when:  ansible_os_family== "RedHat"
+     
+
+
+
