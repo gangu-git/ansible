@@ -1,8 +1,8 @@
 [wbservers]
-172.31.36.37 package_name=apache2
+172.31.36.37 
 
 [dbservers]
-172.31.32.238 package_name2=httpd
+172.31.32.238 
 
 [ubuntus]
 172.31.36.37

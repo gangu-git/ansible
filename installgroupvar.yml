@@ -1,7 +1,7 @@
 ---
-  hosts: [ubuntu]
-  become: yes
-  tasks:
+ - hosts: [ubuntu]
+   become: yes
+   tasks:
    - name: i want istall apacheon my ubuntu
      apt:
       name: "{{linux}}"
