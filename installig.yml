@@ -11,7 +11,7 @@
       service: 
         name: "{{ package_name }}"
         state: started
-    - name: unistalling httpd on redhat node 
+    - name: istalling httpd on redhat node 
       package:
        name: "{{ package_name2}}"
        state: present
