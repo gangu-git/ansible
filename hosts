@@ -7,5 +7,5 @@
 [ubuntus]
 172.31.36.37
 172.31.32.238
- package_name==apache2
- package_name2==httpd
+ package_name: apache2
+ package_name2: httpd
