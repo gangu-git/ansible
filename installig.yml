@@ -1,0 +1,22 @@
+---
+ - hosts: [ubuntus]
+   become: yes
+   tasks:
+    - name: install apache2 on webserver
+      package: 
+       name: "{{ package_name }}"
+       state: present
+      when: ansible_os_family=="Debian"
+    - name: starting apache2 server
+      service: 
+        name: "{{ package_name }}"
+        state: started
+    - name: unistalling httpd on redhat node 
+      package:
+       name: "{{ package_name2}}"
+       state: present
+      when: ansible_os_family=="RedHat"
+    - name: strarting hhtpd service on red hat
+      service:
+        name:  "{{ package_name2}}"
+        state: started
