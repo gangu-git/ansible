@@ -3,7 +3,7 @@
    become: yes
    tasks:
     - name: install apache2 on webserver
-      package: 
+      apt: 
        name: "{{ package_name }}"
        state: present
       when: ansible_os_family=="Debian"
@@ -12,7 +12,7 @@
         name: "{{ package_name }}"
         state: started
     - name: istalling httpd on redhat node 
-      package:
+      yum:
        name: "{{ package_name2}}"
        state: present
       when: ansible_os_family=="RedHat"
